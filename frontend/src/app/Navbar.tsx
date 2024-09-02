@@ -5,12 +5,6 @@ export default function Navbar() {
     <nav className="navbar">
       <h1 className="icon">M</h1>
       <div className="navigation-items">
-        {/* <button className="text">Home</button>
-        <button className="text">About Me</button>
-        <button className="text">Technologies</button>
-        <button className="text">Projects</button>
-        <button className="text">Contact</button> */}
-
         <input type="radio" id="Home" name="color" value="Home" />
         <label className="text" htmlFor="Home">
           Home
