@@ -21,14 +21,9 @@ export default function Navbar() {
           About Me
         </label>
 
-        <input
-          type="radio"
-          id="Technologies"
-          name="color"
-          value="Technologies"
-        />
-        <label className="text" htmlFor="Technologies">
-          Technologies
+        <input type="radio" id="Skills" name="color" value="Skills" />
+        <label className="text" htmlFor="Skills">
+          Skills
         </label>
 
         <input type="radio" id="Projects" name="color" value="Projects" />
