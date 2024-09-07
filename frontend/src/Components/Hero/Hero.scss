@@ -1,0 +1,59 @@
+$bg-primary: #f5f5f7;
+$bg-secondary: #ffffff;
+$text-color: #000000;
+$text-color-secondary: #343434;
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  height: 60vh;
+  width: 80%;
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    position: relative;
+    div {
+      .hero-title-highlight {
+        padding-left: 20px;
+        padding-right: 5px;
+        background-size: cover;
+        background-image: url("/Highlight_Tape.png");
+      }
+      .hero-title {
+        color: $text-color;
+        font-family: "SF Pro Display";
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 90%;
+        background-color: rgba (0, 0, 0, 0);
+        width: 490px;
+      }
+      .hero-subtitle {
+        color: $text-color-secondary;
+        font-family: "SF Pro Display";
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 90%;
+        text-align: justify;
+        width: 490px;
+      }
+    }
+  }
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    .hero-image-img {
+      object-fit: cover;
+      height: 490px;
+      width: 490px;
+      border-radius: 4rem;
+    }
+  }
+}
