@@ -1,0 +1,95 @@
+$bg-primary: #f5f5f7;
+$bg-secondary: #ffffff;
+$text-color: #000000;
+$text-color-secondary: #343434;
+$box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+$gap: 1.5rem;
+
+.about-me {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+
+  .about-row {
+    display: flex;
+    gap: $gap;
+
+    .about-box {
+      height: 20rem;
+      border-radius: 50px;
+      box-shadow: $box-shadow;
+      background-color: $bg-secondary;
+      display: flex;
+      padding: 2rem;
+
+      .about-box-title {
+        font-family: "SF Pro Display";
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 70%;
+        margin-bottom: 1rem;
+
+        color: $text-color;
+      }
+
+      .about-box-subtitle {
+        font-family: "SF Pro Display";
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        max-width: 550px;
+
+        text-align: justify;
+
+        color: #000000;
+      }
+
+      .about-box-subtitle-wide {
+        max-width: 100%;
+      }
+    }
+
+    .about-box-1 {
+      display: flex;
+      justify-content: space-between;
+      .about-img {
+        border-radius: 100rem;
+        height: 100%;
+        aspect-ratio: 1;
+      }
+    }
+
+    .about-box-2,
+    .about-box-5 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-box-3 {
+      background-image: url("/About_Gradient_2.jpg");
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .about-box-4 {
+      width: 600px;
+      max-width: 600px;
+      min-width: 600px;
+
+      background-image: url("/Business_Card.png");
+      background-size: cover;
+    }
+
+    .about-box-big {
+      flex: 1.5;
+    }
+
+    .about-box-normal {
+      flex: 1;
+    }
+  }
+}
