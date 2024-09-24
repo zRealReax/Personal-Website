@@ -8,7 +8,7 @@ import Footer from "../Components/Footer/Footer";
 
 export default function Home() {
   return (
-    <main className="w-screen pt-24 flex flex-col items-center text-black bg-neutral-100 min-h-screen">
+    <main className="w-screen overflow-x-hidden pt-24 flex flex-col items-center text-black bg-neutral-100 min-h-screen">
       <Navbar />
       <Hero />
       <AboutMe />
