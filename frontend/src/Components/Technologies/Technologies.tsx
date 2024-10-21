@@ -1,3 +1,3 @@
 export default function Technologies() {
-  return <main>Test</main>;
+  return <section id="skills">Test</section>;
 }

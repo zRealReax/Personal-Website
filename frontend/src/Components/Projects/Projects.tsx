@@ -29,7 +29,7 @@ export default function Projects() {
   }, [currentIndex, updateGallery]);
 
   return (
-    <section className="carousel">
+    <section className="carousel" id="projects">
       <div className="carousel-container" ref={containerRef}>
         <div className="carousel-empty"></div>
         {[0, 1, 2, 3].map((index) => (

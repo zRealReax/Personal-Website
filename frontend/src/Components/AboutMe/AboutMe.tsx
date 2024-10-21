@@ -3,7 +3,7 @@ import ContactMe from "../Shared/Button/Button";
 
 export default function AboutMe() {
   return (
-    <section className="about-me">
+    <section className="about-me" id="about">
       <div className="about-row">
         <div className="about-box-normal about-box about-box-1">
           <div className="about-box-text">

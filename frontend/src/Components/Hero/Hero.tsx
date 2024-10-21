@@ -3,7 +3,7 @@ import Button from "../Shared/Button/Button";
 
 export default function Hero() {
   return (
-    <section className="hero-container">
+    <section className="hero-container" id="home">
       <div className="hero-content">
         <div>
           {/* <img
