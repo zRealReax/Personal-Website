@@ -23,7 +23,7 @@ export default function AboutMe() {
           <h1 className="about-box-title">Motivation & </h1>
           <h1 className="about-box-title">Passion</h1>
           <h2 className="about-box-subtitle about-box-subtitle-wide">
-            I’m passionate about creating beautiful and functional User
+            I&apos;m passionate about creating beautiful and functional User
             Interfaces. Web Development has given me the chance to bring my
             desires into reality.
           </h2>
