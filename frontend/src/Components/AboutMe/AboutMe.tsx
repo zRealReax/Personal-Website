@@ -9,10 +9,10 @@ export default function AboutMe() {
           <div className="about-box-text">
             <h1 className="about-box-title">About Max Arnold</h1>
             <h2 className="about-box-subtitle">
-              Hi, I'm Max Arnold, a recent high school graduate with a diploma
-              from the TFO J. PH. Fallmerayer. My interest for Web Development
-              was fostered, specifically in the 5th grade, where I got the
-              opportunity to explore Web Development in greater Detail.
+              Hi, I&apos;m Max Arnold, a recent high school graduate with a
+              diploma from the TFO J. PH. Fallmerayer. My interest for Web
+              Development was fostered, specifically in the 5th grade, where I
+              got the opportunity to explore Web Development in greater Detail.
             </h2>
           </div>
           <img className="about-img" src="/About_Gradient_1.jpg"></img>
@@ -29,7 +29,7 @@ export default function AboutMe() {
           </h2>
         </div>
         <div className="about-box-normal about-box about-box-3">
-          <h1 className="about-box-title">Let's Connect</h1>
+          <h1 className="about-box-title">Let&apos;s Connect</h1>
           <ContactMe />
         </div>
       </div>
