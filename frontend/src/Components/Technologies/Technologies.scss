@@ -1,48 +1,54 @@
-$bg-primary: #f5f5f7;
 $bg-secondary: #ffffff;
 $text-color: #000000;
-$icon-font-family: "Inknut Antiqua", serif;
-$animation-duration: 5s;
-$animation-direction: forward;
-
+$animation-duration: 40s;
 $box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+$border-radius: 10px;
 
-.scroller {
-  height: 300px;
-  display: flex;
-  align-items: center;
-  mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 1%,
-    rgba(0, 0, 0, 1) 5%,
-    rgba(0, 0, 0, 1) 95%,
-    rgba(0, 0, 0, 0) 99%
-  );
+.technology-scroller {
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+  rotate: 4deg;
 
-  .scroller-list {
-    rotate: 5deg;
+  .scroller-container {
+    height: 100%;
     display: flex;
-    gap: 1rem;
-    padding-block: 1rem;
-    width: 100%;
-    flex-wrap: nowrap;
-    animation: scroll var(--_animation-duration, 40s)
-      var(--_animation-direction, forwards) linear infinite;
-    .scoller-list-item {
-      border-radius: 10px;
-      color: $text-color;
-      background-color: $bg-secondary;
-      box-shadow: $box-shadow;
-      font-family: "SF Pro Display";
-      font-weight: 900;
-      font-size: 20px;
-      padding: 2rem 4rem;
+    align-items: center;
+
+    .scroller-list {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+      animation: scroll $animation-duration linear infinite;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+      .scroller-list-item {
+        flex-shrink: 0;
+        border-radius: $border-radius;
+        background-color: $bg-secondary;
+        box-shadow: $box-shadow;
+        padding: 2rem 4rem;
+        font-family: "SF Pro Display", system-ui, sans-serif;
+        font-weight: 900;
+        font-size: 1.25rem;
+        color: $text-color;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
     }
   }
 }
 
 @keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
   to {
-    transform: translate(calc(-50% - 0.5rem));
+    transform: translateX(-50%);
   }
 }

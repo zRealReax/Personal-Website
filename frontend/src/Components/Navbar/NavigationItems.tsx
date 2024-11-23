@@ -18,11 +18,7 @@ export default function NavigationItems() {
         const rect = section.getBoundingClientRect();
         const sectionTop = rect.top;
 
-        // Adjust the threshold to be more generous
-        if (
-          sectionTop <= 150 && // Adjust this value as needed
-          sectionTop > -section.clientHeight + 150
-        ) {
+        if (sectionTop <= 150 && sectionTop > -section.clientHeight + 150) {
           currentIndex = index;
         }
       });
@@ -42,10 +38,8 @@ export default function NavigationItems() {
       }
     };
 
-    // Add event listener with passive option for better performance
     window.addEventListener("scroll", handleScroll, { passive: true });
 
-    // Initial check
     handleScroll();
 
     return () => {
@@ -62,6 +56,7 @@ export default function NavigationItems() {
         value="home"
         defaultChecked={activeSection === "home"}
         onChange={() => handleRadioChange("home")}
+        onClick={() => (window.location.hash = "home")}
       />
       <label className="text" htmlFor="home-i">
         Home
@@ -74,6 +69,7 @@ export default function NavigationItems() {
         value="about"
         defaultChecked={activeSection === "about"}
         onChange={() => handleRadioChange("about")}
+        onClick={() => (window.location.hash = "about")}
       />
       <label className="text" htmlFor="about-i">
         About Me
@@ -86,6 +82,7 @@ export default function NavigationItems() {
         value="skills"
         defaultChecked={activeSection === "skills"}
         onChange={() => handleRadioChange("skills")}
+        onClick={() => (window.location.hash = "skills")}
       />
       <label className="text" htmlFor="skills-i">
         Skills
@@ -98,6 +95,7 @@ export default function NavigationItems() {
         value="projects"
         defaultChecked={activeSection === "projects"}
         onChange={() => handleRadioChange("projects")}
+        onClick={() => (window.location.hash = "projects")}
       />
       <label className="text" htmlFor="projects-i">
         Projects
@@ -110,6 +108,7 @@ export default function NavigationItems() {
         value="contact"
         defaultChecked={activeSection === "contact"}
         onChange={() => handleRadioChange("contact")}
+        onClick={() => (window.location.hash = "contact")}
       />
       <label className="text" htmlFor="contact-i">
         Contact
