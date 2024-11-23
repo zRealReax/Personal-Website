@@ -3,7 +3,6 @@ import Hero from "../Components/Hero/Hero";
 import AboutMe from "../Components/AboutMe/AboutMe";
 import Technologies from "../Components/Technologies/Technologies";
 import Projects from "../Components/Projects/Projects";
-import Demo from "../Components/Demo/Demo";
 import Footer from "../Components/Footer/Footer";
 
 export default function Home() {
@@ -14,9 +13,8 @@ export default function Home() {
       <AboutMe />
       <Technologies />
       <Projects />
-      <Demo />
       <Footer />
-      <div className="h-screen my-96">dsfds</div>
+      {/* <div className="h-screen my-96">dsfds</div> */}
     </main>
   );
 }

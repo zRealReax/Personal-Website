@@ -13,6 +13,8 @@ export default function NavigationItems() {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
       let currentIndex: number | null = null;
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const bottomPosition = document.body.offsetHeight;
 
       sections.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
@@ -21,6 +23,7 @@ export default function NavigationItems() {
         if (sectionTop <= 150 && sectionTop > -section.clientHeight + 150) {
           currentIndex = index;
         }
+        if (scrollPosition >= bottomPosition - 1) currentIndex = index;
       });
 
       if (currentIndex !== null) {
