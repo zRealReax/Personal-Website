@@ -38,18 +38,3 @@ const TechnologyScroller = () => {
 };
 
 export default TechnologyScroller;
-
-// import { useRef } from "react";
-
-// addAnimation();
-
-// function addAnimation() {
-//   const scrollerInner = listRef.current;
-//   if (!scrollerInner) return;
-//   const scrollerContent = Array.from(scrollerInner.children);
-
-//   scrollerContent.forEach((item) => {
-//     const duplicatedItem = item.cloneNode(true);
-//     scrollerInner.appendChild(duplicatedItem);
-//   });
-// }
