@@ -4,6 +4,7 @@ import AboutMe from "../Components/AboutMe/AboutMe";
 import Technologies from "../Components/Technologies/Technologies";
 import Projects from "../Components/Projects/Projects";
 import Footer from "../Components/Footer/Footer";
+import BackToTop from "../Components/BackToTop/BackToTop";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Technologies />
       <Projects />
       <Footer />
+      <BackToTop />
       {/* <div className="h-screen my-96">dsfds</div> */}
     </main>
   );
